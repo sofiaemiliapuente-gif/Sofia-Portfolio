@@ -1,4 +1,8 @@
 import { Leaf, Newspaper, Megaphone, UtensilsCrossed } from "lucide-react";
+import homaKahPhoto from "@/assets/images/initiatives/homa-kah.jpg";
+import ceuEnvironmentalFrontPhoto from "@/assets/images/initiatives/ceu-environmental-front.jpg";
+import theBeakPhoto from "@/assets/images/initiatives/thebeak.jpg";
+import aguacatePhoto from "@/assets/images/initiatives/aguacate.jpg";
 
 const allInitiatives = [
   {
@@ -14,6 +18,7 @@ const allInitiatives = [
     company: "Grupo Homa Real Estate Developers",
     year: "2023",
     detail: "Recognized as one of the most sustainable residential developments in the Americas.",
+    photo: homaKahPhoto,
   },
   {
     title: "CEU Environmental Front — Outreach & Content",
@@ -27,6 +32,7 @@ const allInitiatives = [
     company: "Central European University",
     year: "2024 – 2026",
     detail: "Student-led environmental advocacy and campus outreach.",
+    photo: ceuEnvironmentalFrontPhoto,
   },
   {
     title: "Co-Founder, The Beak Student Newspaper",
@@ -40,6 +46,7 @@ const allInitiatives = [
     company: "International Christian School of Vienna",
     year: "2016 – 2021",
     detail: "One of the founding editors of the school's first student-run newspaper, \"The Beak.\"",
+    photo: theBeakPhoto,
   },
   {
     title: "Community Events with Aguacate Latin Food",
@@ -53,6 +60,7 @@ const allInitiatives = [
     company: "Aguacate Latin Food",
     year: "2025 – 2026",
     detail: "Cultural events pairing food, community, and storytelling.",
+    photo: aguacatePhoto,
   },
 ];
 
@@ -61,9 +69,15 @@ const InitiativeCard = ({ initiative }) => {
   return (
     <div className="bg-main-sand rounded-lg overflow-hidden border border-main-taupe/20 hover:border-main-taupe/40 transition-all duration-300 hover:shadow-lg">
       {/* Header */}
-      <div className="relative h-40 overflow-hidden bg-gradient-to-br from-main-taupe/10 via-main-sand to-accent-amber/10 flex items-center justify-center">
-        <Icon className={`w-14 h-14 ${initiative.iconColor}`} strokeWidth={1.5} />
-        <div className="absolute top-4 left-4 bg-main-bone/90 backdrop-blur-sm px-3 py-1 rounded-full">
+      <div className="relative h-48 overflow-hidden bg-main-taupe/10">
+        <img
+          src={initiative.photo}
+          alt={initiative.title}
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-main-ink/40 via-transparent to-transparent" />
+        <div className="absolute top-4 left-4 flex items-center gap-1.5 bg-main-bone/90 backdrop-blur-sm px-3 py-1 rounded-full">
+          <Icon className={`w-3.5 h-3.5 ${initiative.iconColor}`} strokeWidth={2} />
           <span className="text-sm text-main-ink font-medium">
             {initiative.company}
           </span>
