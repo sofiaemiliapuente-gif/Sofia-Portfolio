@@ -20,14 +20,12 @@ several sections (Gallery, Initiatives, Beyond Work) are new for Sofía.
 - React Router
 - React Icons + Lucide
 - Framer Motion
-- EmailJS (contact form)
 - Deployed to GitHub Pages
 
 ## Getting started
 
 ```bash
 npm install
-cp .env.example .env   # then fill in real EmailJS credentials
 npm run dev
 ```
 
@@ -50,7 +48,7 @@ src/
     ├── Gallery/                # NEW — curated photo strip + lightbox
     ├── Initiatives/           # (formerly "Projects") standout accomplishments
     ├── BeyondWork/            # NEW — film, writing, art
-    ├── Contact/                # Contact form (EmailJS) + details
+    ├── Contact/                # Contact details (no form)
     └── About/                  # Full bio page
 ```
 
@@ -72,10 +70,6 @@ placeholder tile until you drop the file in.
 3. **Résumé PDF** — `public/resume-sofia-puente-hernandez.pdf` is
    currently a one-page placeholder. Replace it with the real résumé,
    keeping the same filename.
-4. **EmailJS credentials** — `.env.example` is generic; copy it to `.env`
-   and fill in real values from your own EmailJS dashboard
-   (https://dashboard.emailjs.com/) for the contact form to actually send
-   mail.
 
 ## Deploying to GitHub Pages
 

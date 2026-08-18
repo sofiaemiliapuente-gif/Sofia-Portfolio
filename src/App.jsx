@@ -42,9 +42,9 @@ export default function App() {
       <Skills />
       <Experience />
       <IndustryBanner />
-      <Gallery />
       <Initiatives />
       <BeyondWork />
+      <Gallery />
       <Contact />
     </>
   );

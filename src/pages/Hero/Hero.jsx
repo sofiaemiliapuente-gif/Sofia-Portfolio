@@ -1,4 +1,3 @@
-import { FlipWords } from "@/components/ui/flip-words";
 import PlaceholderImage from "@/components/PlaceholderImage";
 
 // Drop a real photo at src/assets/images/sofia.jpg (portrait, ~4:5 aspect
@@ -8,13 +7,6 @@ import PlaceholderImage from "@/components/PlaceholderImage";
 //   <img src={sofiaPhoto} alt="Sofía Puente Hernández" className="w-full h-full object-cover max-w-md" />
 
 export default function Hero() {
-  const words = [
-    "International Relations",
-    "Communications",
-    "Sustainability & Events",
-    "Customer Relations",
-  ];
-
   return (
     <section
       id="hero"
@@ -27,31 +19,12 @@ export default function Hero() {
           <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between relative z-10 px-4 md:px-8">
             {/* Left column - Text content */}
             <div className="w-full lg:w-1/2 mb-8 lg:mb-0">
-              {/* Welcome badge */}
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-main-sand backdrop-blur-sm border border-main-taupe/30 mb-8">
-                <div className="w-2 h-2 rounded-full bg-accent-sage"></div>
-                <span className="text-main-ink text-sm font-medium">
-                  Open to sales, culture, events & politics
-                </span>
-              </div>
-
               {/* Name section */}
               <div className="mb-8">
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-main-ink font-serif">
                   Sofía Puente Hernández
-                  <span className="block gradient-text">International Relations</span>
+                  <span className="block text-accent-forest">International Relations</span>
                 </h1>
-              </div>
-
-              {/* Role badge — max-w-full + responsive text so long titles wrap instead of
-                  overflowing the viewport on small screens */}
-              <div className="inline-flex items-center gap-3 px-4 sm:px-6 py-3 rounded-xl bg-main-sand border border-main-taupe/30 mb-8 max-w-full">
-                <span className="min-w-0">
-                  <FlipWords
-                    className="text-lg sm:text-xl text-accent-forest font-medium"
-                    words={words}
-                  />
-                </span>
               </div>
 
               {/* Description */}
@@ -74,7 +47,7 @@ export default function Hero() {
                   href="#contact"
                   className="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-accent-sage hover:bg-accent-forest text-white font-medium transition-colors duration-200"
                 >
-                  <span>Get in touch</span>
+                  <span>View contact</span>
                 </a>
 
                 <a

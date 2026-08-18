@@ -113,7 +113,7 @@ export default function About() {
                 href="/#contact"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-main-bone hover:bg-main-sand text-main-ink text-sm font-medium border border-main-taupe/30 transition-colors duration-200"
               >
-                Get in Touch
+                View contact
               </a>
             </div>
           </div>

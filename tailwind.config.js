@@ -66,8 +66,8 @@ module.exports = {
         },
         // Bone/cream neutrals — the warm, editorial base for the whole site.
         main: {
-          bone: "#FAF7F1",
-          sand: "#EFE6D4",
+          bone: "#FDFCFA",
+          sand: "#F6F1E8",
           taupe: "#A79A82",
           ink: "#2B2A22",
         },
