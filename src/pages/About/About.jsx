@@ -1,10 +1,6 @@
 import { Briefcase, GraduationCap } from "lucide-react";
-import PlaceholderImage from "@/components/PlaceholderImage";
+import sofiaPhoto from "@/assets/images/sofia.jpg";
 import { experience, education } from "@/data/experience";
-
-// Drop a real photo at src/assets/images/sofia.jpg (portrait, ~4:5 aspect
-// ratio, at least 900x1125px) and swap the PlaceholderImage below for an
-// <img> import, same as in src/pages/Hero/Hero.jsx.
 
 const TimelineItem = ({ item }) => (
   <div className="relative flex items-start mb-6">
@@ -45,12 +41,13 @@ export default function About() {
         {/* Bio section */}
         <div className="flex flex-col lg:flex-row gap-12 items-start mb-20">
           <div className="flex-shrink-0">
-            <PlaceholderImage
-              label="Sofía's photo"
-              sublabel="src/assets/images/sofia.jpg"
-              aspect="aspect-[4/5]"
-              className="w-52 h-64 shadow-lg"
-            />
+            <div className="w-52 h-64 rounded-2xl overflow-hidden shadow-lg">
+              <img
+                src={sofiaPhoto}
+                alt="Sofía Puente Hernández"
+                className="w-full h-full object-cover object-[58%_15%] scale-150 origin-[60%_45%]"
+              />
+            </div>
           </div>
 
           <div className="flex-1">

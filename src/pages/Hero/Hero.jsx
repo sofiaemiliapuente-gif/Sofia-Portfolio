@@ -1,10 +1,4 @@
-import PlaceholderImage from "@/components/PlaceholderImage";
-
-// Drop a real photo at src/assets/images/sofia.jpg (portrait, ~4:5 aspect
-// ratio, at least 900x1125px, JPG or WEBP) then swap the PlaceholderImage
-// below for:
-//   import sofiaPhoto from "@/assets/images/sofia.jpg";
-//   <img src={sofiaPhoto} alt="Sofía Puente Hernández" className="w-full h-full object-cover max-w-md" />
+import sofiaPhoto from "@/assets/images/sofia.jpg";
 
 export default function Hero() {
   return (
@@ -66,12 +60,11 @@ export default function Hero() {
                 <div className="absolute inset-0 bg-gradient-to-br from-accent-amber/20 to-accent-coral/20 rounded-full blur-3xl"></div>
 
                 {/* Photo container */}
-                <div className="relative rounded-2xl overflow-hidden border-4 border-main-sand shadow-2xl">
-                  <PlaceholderImage
-                    label="Sofía's photo goes here"
-                    sublabel="src/assets/images/sofia.jpg · portrait, ~4:5 ratio, 900×1125px+"
-                    aspect="aspect-[4/5]"
-                    className="border-0 rounded-none"
+                <div className="relative aspect-[4/5] rounded-2xl overflow-hidden border-4 border-main-sand shadow-2xl">
+                  <img
+                    src={sofiaPhoto}
+                    alt="Sofía Puente Hernández"
+                    className="w-full h-full object-cover object-[58%_15%] scale-150 origin-[60%_45%]"
                   />
 
                   {/* Gradient overlay at bottom */}

@@ -58,11 +58,9 @@ This reskin ships with clearly-labeled placeholders wherever a real asset
 wasn't available. Nothing is broken without them — the site just shows a
 placeholder tile until you drop the file in.
 
-1. **Profile photo** — used in Hero and About. Save as
-   `src/assets/images/sofia.jpg` (portrait, ~4:5 aspect ratio, at least
-   900×1125px), then swap the `PlaceholderImage` for a real `<img>` in
-   `src/pages/Hero/Hero.jsx` and `src/pages/About/About.jsx` (see the
-   comments at the top of each file).
+1. ~~**Profile photo**~~ — done (`src/assets/images/sofia.jpg`, used in Hero
+   and About). To adjust the crop, tweak the `object-[X%_Y%]` and
+   `origin-[X%_Y%]` values on the `<img>` in each file.
 2. **Gallery photos** — five spots (Seoul/Dongguk, Vienna embassy, Tulum/
    Homa Kah, Vienna/Aguacate, CEU Environmental Front). Drop files into
    `public/gallery/` using the exact filenames listed in
