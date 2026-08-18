@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.gradient-text {
+  background: linear-gradient(90deg, #7C8F5E, #C79A32);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-border {
+  position: relative;
+  background: linear-gradient(45deg, #7C8F5E, #526641);
+  padding: 2px;
+  border-radius: 0.75rem;
+}
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background: linear-gradient(45deg, #7C8F5E, #526641);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+@layer base {
+  :root {
+    --background: 40 33% 96%;
+    --foreground: 50 14% 15%;
+    --card: 40 33% 96%;
+    --card-foreground: 50 14% 15%;
+    --popover: 40 33% 96%;
+    --popover-foreground: 50 14% 15%;
+    --primary: 50 14% 15%;
+    --primary-foreground: 40 33% 96%;
+    --secondary: 38 30% 90%;
+    --secondary-foreground: 50 14% 15%;
+    --muted: 38 24% 90%;
+    --muted-foreground: 35 10% 42%;
+    --accent: 38 26% 91%;
+    --accent-foreground: 50 14% 15%;
+    --destructive: 14 49% 45%;
+    --destructive-foreground: 40 33% 96%;
+    --border: 35 15% 78%;
+    --input: 35 15% 78%;
+    --ring: 95 20% 42%;
+    --chart-1: 95 20% 45%;
+    --chart-2: 42 55% 48%;
+    --chart-3: 14 49% 45%;
+    --chart-4: 95 25% 30%;
+    --chart-5: 42 40% 65%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
