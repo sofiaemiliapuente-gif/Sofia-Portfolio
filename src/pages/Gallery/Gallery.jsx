@@ -18,6 +18,11 @@ const galleryItems = [
     context: "Exchange year at Dongguk University",
   },
   {
+    filename: "dongguk-exchange-2.jpg",
+    place: "Seoul, South Korea",
+    context: "Exchange year at Dongguk University",
+  },
+  {
     filename: "hong-kong.jpg",
     place: "Hong Kong",
     context: "Cultural exchange trip during her year abroad",
@@ -33,7 +38,27 @@ const galleryItems = [
     context: "Homa Kah, a certified sustainable development",
   },
   {
+    filename: "tulum-homa-kah-2.jpg",
+    place: "Tulum, Mexico",
+    context: "Homa Kah, a certified sustainable development",
+  },
+  {
+    filename: "tulum-homa-kah-3.jpg",
+    place: "Tulum, Mexico",
+    context: "Homa Kah, a certified sustainable development",
+  },
+  {
     filename: "vienna-aguacate.jpg",
+    place: "Vienna, Austria",
+    context: "Community event with Aguacate Latin Food",
+  },
+  {
+    filename: "vienna-aguacate-2.jpg",
+    place: "Vienna, Austria",
+    context: "Community event with Aguacate Latin Food",
+  },
+  {
+    filename: "vienna-aguacate-3.jpg",
     place: "Vienna, Austria",
     context: "Community event with Aguacate Latin Food",
   },
@@ -42,9 +67,19 @@ const galleryItems = [
     place: "Vienna, Austria",
     context: "Outreach for CEU Environmental Front",
   },
+  {
+    filename: "ceu-environmental-front-2.jpg",
+    place: "Vienna, Austria",
+    context: "Outreach for CEU Environmental Front",
+  },
+  {
+    filename: "ceu-environmental-front-3.jpg",
+    place: "Vienna, Austria",
+    context: "Outreach for CEU Environmental Front",
+  },
 ];
 
-const GalleryImage = ({ item, className }) => {
+const GalleryImage = ({ item, badge, className }) => {
   const [errored, setErrored] = useState(false);
   const src = `${import.meta.env.BASE_URL}gallery/${item.filename}`;
 
@@ -63,6 +98,11 @@ const GalleryImage = ({ item, className }) => {
           className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
         />
       )}
+      {badge && (
+        <span className="absolute top-2.5 right-2.5 bg-main-ink/60 backdrop-blur-sm text-white text-xs px-2 py-0.5 rounded-full">
+          {badge}
+        </span>
+      )}
       <div className="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-main-ink/80 to-transparent p-3">
         <p className="text-sm font-medium text-white">{item.place}</p>
         <p className="text-xs text-white/80 line-clamp-1">{item.context}</p>
@@ -71,9 +111,9 @@ const GalleryImage = ({ item, className }) => {
   );
 };
 
-const GalleryTile = ({ item, onClick }) => (
+const GalleryTile = ({ item, badge, onClick }) => (
   <button onClick={onClick} className="block w-full text-left">
-    <GalleryImage item={item} />
+    <GalleryImage item={item} badge={badge} />
   </button>
 );
 
@@ -98,13 +138,23 @@ export default function Gallery() {
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
-          {galleryItems.map((item, index) => (
-            <GalleryTile
-              key={item.filename}
-              item={item}
-              onClick={() => setActiveIndex(index)}
-            />
-          ))}
+          {galleryItems.map((item, index) => {
+            const sameContext = galleryItems.filter(
+              (g) => g.place === item.place && g.context === item.context
+            );
+            const badge =
+              sameContext.length > 1
+                ? `${sameContext.indexOf(item) + 1}/${sameContext.length}`
+                : null;
+            return (
+              <GalleryTile
+                key={item.filename}
+                item={item}
+                badge={badge}
+                onClick={() => setActiveIndex(index)}
+              />
+            );
+          })}
         </div>
       </div>
 
