@@ -64,22 +64,25 @@ module.exports = {
           4: "hsl(var(--chart-4))",
           5: "hsl(var(--chart-5))",
         },
-        // Pastel butter-yellow neutrals — the warm, editorial base for the whole site.
+        // Near-white base with a soft warm-cream secondary surface — kept
+        // deliberately restrained (readability/professionalism) with the
+        // warmth carried by the accent family instead of the background.
         main: {
-          bone: "#FFFBF0",
-          sand: "#FBF1D2",
-          taupe: "#C2AD79",
-          ink: "#2E2A1E",
+          bone: "#FFFFFF",
+          sand: "#F4E7CF",
+          taupe: "#8C8171",
+          ink: "#242019",
         },
-        // Mustard/amber accent family, a coral pop for highlights, and a
+        // Muted antique-gold accent family (deep enough for real contrast
+        // with white text), a soft terracotta pop for highlights, and a
         // rust used only for rare alert-style accents.
         accent: {
           DEFAULT: "hsl(var(--accent))",
           foreground: "hsl(var(--accent-foreground))",
-          amber: "#E0AC3D",
-          ochre: "#A6741F",
-          coral: "#E39178",
-          rust: "#C15A3E",
+          amber: "#B8892A",
+          ochre: "#8F6B1E",
+          coral: "#C97B5E",
+          rust: "#A85338",
         },
       },
     },
