@@ -4,14 +4,15 @@ Drop real photos in this folder using these **exact filenames** — the
 Beyond Work slideshow (`src/pages/BeyondWork/BeyondWork.jsx`) already
 points at them, so a matching file "just works" with no code changes.
 
-| Filename       | Slide                                             |
-|----------------|----------------------------------------------------|
-| `film.jpg`     | Film — a still, a behind-the-scenes shot, etc.      |
-| `writing.jpg`  | Writing — whatever best represents this pursuit     |
-| `art.jpg`      | Art — a piece, a photo of work in progress, etc.    |
+| Filename       | Slide                                | Status |
+|----------------|----------------------------------------|--------|
+| `film-1.jpg`   | Film — checking a shot on location     | ✅ in place |
+| `film-2.jpg`   | Film — on location with the crew       | ✅ in place |
+| `film-3.jpg`   | Film — slating a take on set           | pending |
+| `writing.jpg`  | Writing — whatever best represents it  | pending |
 
-**Specs:** landscape orientation, ~4:3 aspect ratio, at least 1200×900px,
-JPG or WEBP, ideally under ~500KB each so the page stays fast.
+**Specs:** portrait, ~3:4–4:5 aspect ratio, at least 1200px on the long
+edge, JPG or WEBP, ideally under ~500KB each so the page stays fast.
 
 Until a file is added, the slideshow shows a labeled placeholder in its
 place — nothing breaks, so files can be added one at a time.
