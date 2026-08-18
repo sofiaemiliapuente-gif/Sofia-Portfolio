@@ -38,14 +38,6 @@ const slides = [
     link: null,
   },
   {
-    category: "Film",
-    icon: Clapperboard,
-    filename: "film-2.jpg",
-    blurb: "On location with the crew, setting up the next shot.",
-    tags: ["On location", "Crew"],
-    link: null,
-  },
-  {
     category: "Writing",
     icon: PenLine,
     filename: "writing.jpg",

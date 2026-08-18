@@ -9,13 +9,18 @@ import { X, ChevronLeft, ChevronRight, ImageOff } from "lucide-react";
 //
 // TO ADD A REAL PHOTO: drop the file at public/gallery/<filename> using the
 // exact filename listed below (see public/gallery/README.md for the same
-// list). Recommended: landscape, ~4:3 aspect ratio, at least 1200×900px,
-// JPG or WEBP, ideally under ~500KB so the page stays fast.
+// list). Recommended: square, at least 1200×1200px, JPG or WEBP, ideally
+// under ~500KB so the page stays fast.
 const galleryItems = [
   {
-    filename: "seoul-dongguk.jpg",
+    filename: "dongguk-exchange.jpg",
     place: "Seoul, South Korea",
-    context: "Exchange semester at Dongguk University",
+    context: "Exchange year at Dongguk University",
+  },
+  {
+    filename: "hong-kong.jpg",
+    place: "Hong Kong",
+    context: "Cultural exchange trip during her year abroad",
   },
   {
     filename: "vienna-embassy.jpg",
@@ -44,7 +49,7 @@ const GalleryImage = ({ item, className }) => {
   const src = `${import.meta.env.BASE_URL}gallery/${item.filename}`;
 
   return (
-    <div className={`group relative aspect-[4/3] w-full overflow-hidden rounded-xl border border-main-taupe/30 bg-main-sand ${className || ""}`}>
+    <div className={`group relative aspect-square w-full overflow-hidden rounded-xl border border-main-taupe/30 bg-main-sand ${className || ""}`}>
       {errored ? (
         <div className="flex h-full w-full flex-col items-center justify-center gap-2 bg-gradient-to-br from-accent-amber/20 via-main-sand to-accent-coral/15 px-3 text-center">
           <ImageOff className="w-7 h-7 text-main-taupe" strokeWidth={1.5} />

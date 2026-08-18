@@ -8,7 +8,6 @@ points at them, so a matching file "just works" with no code changes.
 |------------------|---------------------------------------------|--------|
 | `sojufilm.jpg`   | Film — on set at a restaurant scene (1st)   | ✅ in place |
 | `film-1.jpg`     | Film — checking a shot on location          | ✅ in place |
-| `film-2.jpg`     | Film — on location with the crew            | ✅ in place |
 | `writing.jpg`    | Writing — whatever best represents it       | pending |
 
 **Specs:** square (1:1), at least 1200×1200px, JPG or WEBP, ideally under

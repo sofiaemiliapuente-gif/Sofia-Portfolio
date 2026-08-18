@@ -61,13 +61,13 @@ placeholder tile until you drop the file in.
 1. ~~**Profile photo**~~ — done (`src/assets/images/sofia.jpg`, used in Hero
    and About). To adjust the crop, tweak the `object-[X%_Y%]` and
    `origin-[X%_Y%]` values on the `<img>` in each file.
-2. **Gallery photos** — five spots (Seoul/Dongguk, Vienna embassy, Tulum/
-   Homa Kah, Vienna/Aguacate, CEU Environmental Front). Drop files into
-   `public/gallery/` using the exact filenames listed in
-   `public/gallery/README.md` — no code changes needed.
-3. **Beyond Work photos** — 3 of 4 slides done (sojufilm, film-1, film-2).
-   Still need `writing.jpg` — drop it into `public/beyond-work/` using
-   the exact filename listed in `public/beyond-work/README.md`.
+2. **Gallery photos** — 5 of 6 spots done (Dongguk exchange, Hong Kong,
+   Homa Kah, Aguacate, CEU Environmental Front). Still need the Vienna
+   embassy photo — drop it into `public/gallery/` using the exact
+   filename listed in `public/gallery/README.md`.
+3. **Beyond Work photos** — 2 of 3 slides done (sojufilm, film-1). Still
+   need `writing.jpg` — drop it into `public/beyond-work/` using the
+   exact filename listed in `public/beyond-work/README.md`.
 4. **Résumé PDF** — `public/resume-sofia-puente-hernandez.pdf` is
    currently a one-page placeholder. Replace it with the real résumé,
    keeping the same filename.
