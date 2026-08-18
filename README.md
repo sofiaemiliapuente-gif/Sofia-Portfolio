@@ -65,10 +65,9 @@ placeholder tile until you drop the file in.
    Homa Kah, Vienna/Aguacate, CEU Environmental Front). Drop files into
    `public/gallery/` using the exact filenames listed in
    `public/gallery/README.md` — no code changes needed.
-3. **Beyond Work photos** — 2 of 4 slides done (film-1, film-2). Still
-   need `film-3.jpg` and `writing.jpg` — drop them into
-   `public/beyond-work/` using the exact filenames listed in
-   `public/beyond-work/README.md`.
+3. **Beyond Work photos** — 3 of 4 slides done (sojufilm, film-1, film-2).
+   Still need `writing.jpg` — drop it into `public/beyond-work/` using
+   the exact filename listed in `public/beyond-work/README.md`.
 4. **Résumé PDF** — `public/resume-sofia-puente-hernandez.pdf` is
    currently a one-page placeholder. Replace it with the real résumé,
    keeping the same filename.

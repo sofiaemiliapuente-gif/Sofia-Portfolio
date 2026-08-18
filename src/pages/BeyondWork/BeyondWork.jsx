@@ -15,13 +15,20 @@ import {
 //
 // TO ADD/REPLACE A PHOTO: drop the file at public/beyond-work/<filename>
 // using the exact filename below (see public/beyond-work/README.md).
-// Recommended: portrait, ~3:4–4:5 aspect ratio, at least 1200px on the
-// long edge, JPG or WEBP.
+// Recommended: square (1:1), at least 1200×1200px, JPG or WEBP.
 //
 // Each slide can optionally link out (a reel, a writing sample, an
 // Instagram/portfolio) once one exists — set `link` to a URL and a
 // "View" button appears automatically. Leave it null until then.
 const slides = [
+  {
+    category: "Film",
+    icon: Clapperboard,
+    filename: "sojufilm.jpg",
+    blurb: "On set at a restaurant scene, slating a take with the crew.",
+    tags: ["On set", "Acting"],
+    link: null,
+  },
   {
     category: "Film",
     icon: Clapperboard,
@@ -36,14 +43,6 @@ const slides = [
     filename: "film-2.jpg",
     blurb: "On location with the crew, setting up the next shot.",
     tags: ["On location", "Crew"],
-    link: null,
-  },
-  {
-    category: "Film",
-    icon: Clapperboard,
-    filename: "film-3.jpg",
-    blurb: "On set, slating a take with the crew.",
-    tags: ["On set", "Acting"],
     link: null,
   },
   {
@@ -62,7 +61,7 @@ const SlideImage = ({ slide }) => {
   const src = `${import.meta.env.BASE_URL}beyond-work/${slide.filename}`;
 
   return (
-    <div className="relative aspect-[4/5] w-full overflow-hidden bg-main-sand">
+    <div className="relative aspect-square w-full overflow-hidden bg-main-sand">
       {errored ? (
         <div className="flex h-full w-full flex-col items-center justify-center gap-2 bg-gradient-to-br from-accent-amber/20 via-main-sand to-accent-coral/15 px-4 text-center">
           <ImageOff className="w-10 h-10 text-main-taupe" strokeWidth={1.5} />
