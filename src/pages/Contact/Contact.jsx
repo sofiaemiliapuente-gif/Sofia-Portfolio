@@ -6,24 +6,24 @@ const contactDetails = [
     label: "Email",
     value: "sofiaemiliapuente@gmail.com",
     href: "mailto:sofiaemiliapuente@gmail.com",
-    color: "text-accent-sage",
-    bg: "bg-accent-sage/10",
+    color: "text-accent-amber",
+    bg: "bg-accent-amber/10",
   },
   {
     icon: Phone,
     label: "Phone",
     value: "+43 660 1185761",
     href: "tel:+436601185761",
-    color: "text-accent-forest",
-    bg: "bg-accent-forest/10",
+    color: "text-accent-ochre",
+    bg: "bg-accent-ochre/10",
   },
   {
     icon: Linkedin,
     label: "LinkedIn",
     value: "Sofía Emilia Puente Hernández",
     href: "https://www.linkedin.com/in/sof%C3%ADa-emilia-puente-hernandez-916782284/",
-    color: "text-accent-gold",
-    bg: "bg-accent-gold/10",
+    color: "text-accent-coral",
+    bg: "bg-accent-coral/10",
   },
   {
     icon: MapPin,
@@ -82,7 +82,7 @@ export default function Contact() {
                 {...(href
                   ? { href, target: href.startsWith("http") ? "_blank" : undefined, rel: href.startsWith("http") ? "noopener noreferrer" : undefined }
                   : {})}
-                className="flex items-center gap-4 bg-main-sand rounded-xl p-4 border border-main-taupe/20 hover:border-accent-sage/40 transition-colors"
+                className="flex items-center gap-4 bg-main-sand rounded-xl p-4 border border-main-taupe/20 hover:border-accent-amber/40 transition-colors"
               >
                 <div className={`p-3 rounded-lg ${bg}`}>
                   <Icon className={`w-6 h-6 ${color}`} />

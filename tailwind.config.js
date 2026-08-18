@@ -64,22 +64,22 @@ module.exports = {
           4: "hsl(var(--chart-4))",
           5: "hsl(var(--chart-5))",
         },
-        // Bone/cream neutrals — the warm, editorial base for the whole site.
+        // Pastel butter-yellow neutrals — the warm, editorial base for the whole site.
         main: {
-          bone: "#FDFCFA",
-          sand: "#F6F1E8",
-          taupe: "#A79A82",
-          ink: "#2B2A22",
+          bone: "#FFFBF0",
+          sand: "#FBF1D2",
+          taupe: "#C2AD79",
+          ink: "#2E2A1E",
         },
-        // Sage green accent family, plus a gold highlight and a rust used
-        // only for form/validation states.
+        // Mustard/amber accent family, a coral pop for highlights, and a
+        // rust used only for rare alert-style accents.
         accent: {
           DEFAULT: "hsl(var(--accent))",
           foreground: "hsl(var(--accent-foreground))",
-          sage: "#7C8F5E",
-          forest: "#526641",
-          gold: "#C79A32",
-          rust: "#B2543A",
+          amber: "#E0AC3D",
+          ochre: "#A6741F",
+          coral: "#E39178",
+          rust: "#C15A3E",
         },
       },
     },

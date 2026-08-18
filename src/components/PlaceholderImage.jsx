@@ -16,7 +16,7 @@ export default function PlaceholderImage({
   return (
     <div
       className={cn(
-        "relative flex flex-col items-center justify-center gap-2 overflow-hidden rounded-2xl border-2 border-dashed border-main-taupe/50 bg-gradient-to-br from-accent-sage/20 via-main-sand to-accent-gold/15 text-center px-4",
+        "relative flex flex-col items-center justify-center gap-2 overflow-hidden rounded-2xl border-2 border-dashed border-main-taupe/50 bg-gradient-to-br from-accent-amber/20 via-main-sand to-accent-coral/15 text-center px-4",
         aspect,
         className
       )}

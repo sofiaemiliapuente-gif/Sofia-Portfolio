@@ -69,7 +69,7 @@ export default function Header() {
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-main-bone/95 backdrop-blur-md md:bg-transparent md:backdrop-blur-none">
       <div className="md:fixed md:top-4 md:left-1/2 md:transform md:-translate-x-1/2 w-full md:w-auto">
-        <div className="p-[2px] md:rounded-full bg-gradient-to-r from-accent-sage via-accent-gold to-accent-sage animate-gradient-x">
+        <div className="p-[2px] md:rounded-full bg-gradient-to-r from-accent-amber via-accent-coral to-accent-amber animate-gradient-x">
           <nav className="bg-main-bone/90 backdrop-blur-md md:rounded-full px-4 md:px-6 py-2.5 md:shadow-lg">
             {/* Mobile Menu Button */}
             <div className="flex justify-between items-center md:hidden px-2">
@@ -94,7 +94,7 @@ export default function Header() {
 
             {/* Navigation Links */}
             <div className={`${isMenuOpen ? 'block' : 'hidden'} md:block`}>
-              <div className="flex flex-col md:flex-row md:flex-wrap md:items-center gap-2 md:gap-1 lg:gap-2 py-4 md:py-0 md:max-w-3xl">
+              <div className="flex flex-col md:flex-row md:flex-nowrap md:items-center gap-2 md:gap-0.5 py-4 md:py-0 md:whitespace-nowrap">
                 {navLinks.map(({ id, icon: Icon, text }) => (
                   <a
                     key={id}
@@ -108,18 +108,18 @@ export default function Header() {
                       }
                       setIsMenuOpen(false);
                     }}
-                    className={`px-3 py-2 md:py-1.5 rounded-lg md:rounded-full text-sm font-medium
-                      transition-all duration-300 flex items-center gap-2
+                    className={`px-3 py-2 md:px-2.5 md:py-1.5 rounded-lg md:rounded-full text-sm font-medium
+                      transition-all duration-300 flex items-center gap-2 md:gap-1.5
                       hover:bg-main-taupe/10 cursor-pointer
                       ${
                         activeLink === id
-                          ? "bg-accent-sage/20 text-accent-forest"
+                          ? "bg-accent-amber/20 text-accent-ochre"
                           : "text-main-taupe hover:text-main-ink"
                       }
                     `}
                   >
                     <Icon
-                      className={`text-base ${
+                      className={`text-base md:text-sm ${
                         activeLink === id ? "scale-110" : ""
                       }`}
                     />
@@ -134,17 +134,17 @@ export default function Header() {
                     navigate('/about');
                     setIsMenuOpen(false);
                   }}
-                  className={`px-3 py-2 md:py-1.5 rounded-lg md:rounded-full text-sm font-medium
-                    transition-all duration-300 flex items-center gap-2
+                  className={`px-3 py-2 md:px-2.5 md:py-1.5 rounded-lg md:rounded-full text-sm font-medium
+                    transition-all duration-300 flex items-center gap-2 md:gap-1.5
                     hover:bg-main-taupe/10 cursor-pointer
                     ${
                       location.pathname === '/about'
-                        ? "bg-accent-sage/20 text-accent-forest"
+                        ? "bg-accent-amber/20 text-accent-ochre"
                         : "text-main-taupe hover:text-main-ink"
                     }
                   `}
                 >
-                  <FaUser className={`text-base ${location.pathname === '/about' ? "scale-110" : ""}`} />
+                  <FaUser className={`text-base md:text-sm ${location.pathname === '/about' ? "scale-110" : ""}`} />
                   <span className="inline">About</span>
                 </a>
               </div>

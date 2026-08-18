@@ -46,7 +46,7 @@ const GalleryImage = ({ item, className }) => {
   return (
     <div className={`group relative aspect-[4/3] w-full overflow-hidden rounded-xl border border-main-taupe/30 bg-main-sand ${className || ""}`}>
       {errored ? (
-        <div className="flex h-full w-full flex-col items-center justify-center gap-2 bg-gradient-to-br from-accent-sage/20 via-main-sand to-accent-gold/15 px-3 text-center">
+        <div className="flex h-full w-full flex-col items-center justify-center gap-2 bg-gradient-to-br from-accent-amber/20 via-main-sand to-accent-coral/15 px-3 text-center">
           <ImageOff className="w-7 h-7 text-main-taupe" strokeWidth={1.5} />
           <p className="text-xs text-main-taupe">public/gallery/{item.filename}</p>
         </div>

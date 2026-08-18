@@ -18,21 +18,21 @@ export default function Footer() {
               href="https://www.linkedin.com/in/sof%C3%ADa-emilia-puente-hernandez-916782284/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-main-taupe hover:text-accent-forest transition-colors duration-200"
+              className="text-main-taupe hover:text-accent-ochre transition-colors duration-200"
               aria-label="LinkedIn"
             >
               <FaLinkedin size={20} />
             </a>
             <a
               href="mailto:sofiaemiliapuente@gmail.com"
-              className="text-main-taupe hover:text-accent-forest transition-colors duration-200"
+              className="text-main-taupe hover:text-accent-ochre transition-colors duration-200"
               aria-label="Email"
             >
               <FaEnvelope size={20} />
             </a>
             <a
               href="tel:+436601185761"
-              className="text-main-taupe hover:text-accent-forest transition-colors duration-200"
+              className="text-main-taupe hover:text-accent-ochre transition-colors duration-200"
               aria-label="Phone"
             >
               <FaPhone size={18} />

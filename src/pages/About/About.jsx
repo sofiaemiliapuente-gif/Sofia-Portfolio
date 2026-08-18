@@ -8,13 +8,13 @@ import { experience, education } from "@/data/experience";
 
 const TimelineItem = ({ item }) => (
   <div className="relative flex items-start mb-6">
-    <div className="flex-shrink-0 w-3 h-3 bg-accent-sage rounded-full border-2 border-main-bone shadow mt-2 mr-5 z-10"></div>
-    <div className="flex-1 bg-main-bone rounded-lg border border-main-taupe/20 p-4 hover:border-accent-sage/30 transition-colors duration-200">
-      <div className="inline-block mb-1 px-3 py-0.5 rounded-full text-xs font-medium bg-accent-sage/10 text-accent-forest">
+    <div className="flex-shrink-0 w-3 h-3 bg-accent-amber rounded-full border-2 border-main-bone shadow mt-2 mr-5 z-10"></div>
+    <div className="flex-1 bg-main-bone rounded-lg border border-main-taupe/20 p-4 hover:border-accent-amber/30 transition-colors duration-200">
+      <div className="inline-block mb-1 px-3 py-0.5 rounded-full text-xs font-medium bg-accent-amber/10 text-accent-ochre">
         {item.title}
       </div>
       <h3 className="text-sm font-bold text-main-ink">{item.cardTitle}</h3>
-      <p className="text-sm text-accent-forest">{item.cardSubtitle}</p>
+      <p className="text-sm text-accent-ochre">{item.cardSubtitle}</p>
       {item.location && (
         <p className="text-xs text-main-taupe mt-0.5">{item.location}</p>
       )}
@@ -25,11 +25,11 @@ const TimelineItem = ({ item }) => (
 const TimelineColumn = ({ items, title, icon: Icon }) => (
   <div>
     <div className="flex items-center gap-2 mb-6">
-      <Icon className="w-5 h-5 text-accent-sage" />
+      <Icon className="w-5 h-5 text-accent-amber" />
       <h3 className="text-base font-bold text-main-ink">{title}</h3>
     </div>
     <div className="relative">
-      <div className="absolute left-1.5 top-0 w-px h-full bg-accent-sage/20"></div>
+      <div className="absolute left-1.5 top-0 w-px h-full bg-accent-amber/20"></div>
       {items.map((item, i) => (
         <TimelineItem key={i} item={item} />
       ))}
@@ -54,7 +54,7 @@ export default function About() {
           </div>
 
           <div className="flex-1">
-            <p className="text-xs font-semibold tracking-widest uppercase text-accent-forest mb-3">About</p>
+            <p className="text-xs font-semibold tracking-widest uppercase text-accent-ochre mb-3">About</p>
             <h1 className="text-3xl font-bold text-main-ink mb-6 leading-tight font-serif">
               Sofía Puente Hernández
             </h1>
@@ -105,7 +105,7 @@ export default function About() {
               <a
                 href="/resume-sofia-puente-hernandez.pdf"
                 download="sofia-puente-hernandez-resume.pdf"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-accent-sage hover:bg-accent-forest text-white text-sm font-medium transition-colors duration-200"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-accent-amber hover:bg-accent-ochre text-white text-sm font-medium transition-colors duration-200"
               >
                 Download résumé
               </a>

@@ -1,4 +1,4 @@
-import { Leaf, Landmark, Megaphone, UtensilsCrossed } from "lucide-react";
+import { Leaf, Newspaper, Megaphone, UtensilsCrossed } from "lucide-react";
 
 const allInitiatives = [
   {
@@ -10,7 +10,7 @@ const allInitiatives = [
       { value: "Int'l", label: "Property Awards" },
     ],
     icon: Leaf,
-    iconColor: "text-accent-sage",
+    iconColor: "text-accent-amber",
     company: "Grupo Homa Real Estate Developers",
     year: "2023",
     detail: "Recognized as one of the most sustainable residential developments in the Americas.",
@@ -23,23 +23,23 @@ const allInitiatives = [
       { value: "Lead", label: "communications role" },
     ],
     icon: Megaphone,
-    iconColor: "text-accent-forest",
+    iconColor: "text-accent-ochre",
     company: "Central European University",
     year: "2024 – 2026",
     detail: "Student-led environmental advocacy and campus outreach.",
   },
   {
-    title: "Diplomatic Support at the Embassy of Nicaragua",
+    title: "Co-Founder, The Beak Student Newspaper",
     description:
-      "Produced diplomatic reports, policy briefings, and translations supporting the Ambassador across UNIDO, UNODC, IAEA, GRULAC, and G77 meetings.",
+      "Co-founded the school's student newspaper, contributing original editorial pieces and editing submissions across a 3-year run.",
     outcomes: [
-      { value: "5", label: "multilateral bodies" },
+      { value: "3 yrs", label: "editorial run" },
     ],
-    icon: Landmark,
-    iconColor: "text-accent-gold",
-    company: "Embassy of The Republic of Nicaragua",
-    year: "2024",
-    detail: "Vienna is home to several UN offices and multilateral institutions.",
+    icon: Newspaper,
+    iconColor: "text-accent-coral",
+    company: "International Christian School of Vienna",
+    year: "2016 – 2021",
+    detail: "One of the founding editors of the school's first student-run newspaper, \"The Beak.\"",
   },
   {
     title: "Community Events with Aguacate Latin Food",
@@ -61,14 +61,14 @@ const InitiativeCard = ({ initiative }) => {
   return (
     <div className="bg-main-sand rounded-lg overflow-hidden border border-main-taupe/20 hover:border-main-taupe/40 transition-all duration-300 hover:shadow-lg">
       {/* Header */}
-      <div className="relative h-40 overflow-hidden bg-gradient-to-br from-main-taupe/10 via-main-sand to-accent-sage/10 flex items-center justify-center">
+      <div className="relative h-40 overflow-hidden bg-gradient-to-br from-main-taupe/10 via-main-sand to-accent-amber/10 flex items-center justify-center">
         <Icon className={`w-14 h-14 ${initiative.iconColor}`} strokeWidth={1.5} />
         <div className="absolute top-4 left-4 bg-main-bone/90 backdrop-blur-sm px-3 py-1 rounded-full">
           <span className="text-sm text-main-ink font-medium">
             {initiative.company}
           </span>
         </div>
-        <div className="absolute top-4 right-4 bg-accent-sage/90 backdrop-blur-sm px-3 py-1 rounded-full">
+        <div className="absolute top-4 right-4 bg-accent-amber/90 backdrop-blur-sm px-3 py-1 rounded-full">
           <span className="text-sm text-white font-medium">{initiative.year}</span>
         </div>
       </div>
@@ -84,7 +84,7 @@ const InitiativeCard = ({ initiative }) => {
           <div className="flex gap-4 mb-3 pb-3 border-b border-main-taupe/20">
             {initiative.outcomes.map((outcome, i) => (
               <div key={i}>
-                <div className="text-accent-forest font-bold text-base leading-tight">
+                <div className="text-accent-ochre font-bold text-base leading-tight">
                   {outcome.value}
                 </div>
                 <div className="text-main-taupe text-xs leading-tight">

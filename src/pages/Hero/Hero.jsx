@@ -23,7 +23,7 @@ export default function Hero() {
               <div className="mb-8">
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-main-ink font-serif">
                   Sofía Puente Hernández
-                  <span className="block text-accent-forest">International Relations</span>
+                  <span className="block text-accent-ochre">International Relations</span>
                 </h1>
               </div>
 
@@ -45,7 +45,7 @@ export default function Hero() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
                   href="#contact"
-                  className="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-accent-sage hover:bg-accent-forest text-white font-medium transition-colors duration-200"
+                  className="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-accent-amber hover:bg-accent-ochre text-white font-medium transition-colors duration-200"
                 >
                   <span>View contact</span>
                 </a>
@@ -63,7 +63,7 @@ export default function Hero() {
             <div className="w-full lg:w-1/2 flex justify-center lg:justify-end">
               <div className="relative w-full max-w-md">
                 {/* Decorative background elements */}
-                <div className="absolute inset-0 bg-gradient-to-br from-accent-sage/20 to-accent-gold/20 rounded-full blur-3xl"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-accent-amber/20 to-accent-coral/20 rounded-full blur-3xl"></div>
 
                 {/* Photo container */}
                 <div className="relative rounded-2xl overflow-hidden border-4 border-main-sand shadow-2xl">

@@ -56,4 +56,11 @@ export const education = [
     location: "Seoul, South Korea",
     bullets: [],
   },
+  {
+    title: "Sep 2016 – May 2021",
+    cardTitle: "International Baccalaureate Diploma – Full",
+    cardSubtitle: "International Christian School of Vienna",
+    location: "Vienna, Austria",
+    bullets: [],
+  },
 ];

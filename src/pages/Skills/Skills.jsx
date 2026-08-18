@@ -50,7 +50,7 @@ const SkillsSection = () => {
     {
       icon: Globe2,
       title: "Languages",
-      color: "text-accent-forest",
+      color: "text-accent-ochre",
       skills: [
         { name: "Spanish (Native)", icon: <span>🇪🇸</span> },
         { name: "English (Professional)", icon: <span>🇬🇧</span> },
@@ -60,25 +60,25 @@ const SkillsSection = () => {
     {
       icon: Handshake,
       title: "Competencies",
-      color: "text-accent-sage",
+      color: "text-accent-amber",
       skills: [
-        { name: "Copywriting", icon: <FaPenNib className="w-4 h-4 text-accent-forest" /> },
-        { name: "Diplomatic report writing", icon: <FaFileSignature className="w-4 h-4 text-accent-forest" /> },
-        { name: "Translation (ES/EN)", icon: <FaExchangeAlt className="w-4 h-4 text-accent-gold" /> },
-        { name: "Project management", icon: <FaTasks className="w-4 h-4 text-accent-sage" /> },
+        { name: "Copywriting", icon: <FaPenNib className="w-4 h-4 text-accent-ochre" /> },
+        { name: "Diplomatic report writing", icon: <FaFileSignature className="w-4 h-4 text-accent-ochre" /> },
+        { name: "Translation (ES/EN)", icon: <FaExchangeAlt className="w-4 h-4 text-accent-coral" /> },
+        { name: "Project management", icon: <FaTasks className="w-4 h-4 text-accent-amber" /> },
         { name: "Event coordination", icon: <FaCalendarCheck className="w-4 h-4 text-accent-rust" /> },
-        { name: "Cross-cultural communication", icon: <FaUsers className="w-4 h-4 text-accent-forest" /> },
+        { name: "Cross-cultural communication", icon: <FaUsers className="w-4 h-4 text-accent-ochre" /> },
       ],
     },
     {
       icon: Share2,
       title: "Digital",
-      color: "text-accent-gold",
+      color: "text-accent-coral",
       skills: [
         { name: "Instagram", icon: <FaInstagram className="w-4 h-4 text-accent-rust" /> },
-        { name: "Facebook", icon: <FaFacebook className="w-4 h-4 text-accent-forest" /> },
-        { name: "LinkedIn", icon: <FaLinkedin className="w-4 h-4 text-accent-sage" /> },
-        { name: "Canva", icon: <Palette className="w-4 h-4 text-accent-gold" /> },
+        { name: "Facebook", icon: <FaFacebook className="w-4 h-4 text-accent-ochre" /> },
+        { name: "LinkedIn", icon: <FaLinkedin className="w-4 h-4 text-accent-amber" /> },
+        { name: "Canva", icon: <Palette className="w-4 h-4 text-accent-coral" /> },
       ],
     },
   ];

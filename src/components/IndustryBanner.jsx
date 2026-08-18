@@ -33,7 +33,7 @@ const IndustryBanner = () => {
                 key={index}
                 className="flex items-center space-x-3 px-8 py-4 mx-4 bg-main-bone rounded-lg shadow-sm border border-main-taupe/20 hover:shadow-md transition-shadow duration-300 min-w-max"
               >
-                <Icon className="w-6 h-6 text-accent-sage" />
+                <Icon className="w-6 h-6 text-accent-amber" />
                 <span className="text-main-ink font-medium whitespace-nowrap">
                   {industry.name}
                 </span>

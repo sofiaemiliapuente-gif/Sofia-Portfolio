@@ -4,7 +4,7 @@
 
 .gradient-border {
   position: relative;
-  background: linear-gradient(45deg, #7C8F5E, #526641);
+  background: linear-gradient(45deg, #E0AC3D, #A6741F);
   padding: 2px;
   border-radius: 0.75rem;
 }
@@ -20,7 +20,7 @@
   height: 2px;
   bottom: -4px;
   left: 0;
-  background: linear-gradient(45deg, #7C8F5E, #526641);
+  background: linear-gradient(45deg, #E0AC3D, #A6741F);
   transition: width 0.3s ease;
 }
 
@@ -30,30 +30,30 @@
 
 @layer base {
   :root {
-    --background: 40 30% 98%;
-    --foreground: 50 14% 15%;
-    --card: 40 30% 98%;
-    --card-foreground: 50 14% 15%;
-    --popover: 40 30% 98%;
-    --popover-foreground: 50 14% 15%;
-    --primary: 50 14% 15%;
-    --primary-foreground: 40 30% 98%;
-    --secondary: 38 25% 94%;
-    --secondary-foreground: 50 14% 15%;
-    --muted: 38 20% 94%;
-    --muted-foreground: 35 10% 42%;
-    --accent: 38 22% 95%;
-    --accent-foreground: 50 14% 15%;
-    --destructive: 14 49% 45%;
-    --destructive-foreground: 40 30% 98%;
-    --border: 35 15% 85%;
-    --input: 35 15% 85%;
-    --ring: 95 20% 42%;
-    --chart-1: 95 20% 45%;
-    --chart-2: 42 55% 48%;
-    --chart-3: 14 49% 45%;
-    --chart-4: 95 25% 30%;
-    --chart-5: 42 40% 65%;
+    --background: 48 100% 97%;
+    --foreground: 45 25% 14%;
+    --card: 48 100% 97%;
+    --card-foreground: 45 25% 14%;
+    --popover: 48 100% 97%;
+    --popover-foreground: 45 25% 14%;
+    --primary: 45 25% 14%;
+    --primary-foreground: 48 100% 97%;
+    --secondary: 46 75% 89%;
+    --secondary-foreground: 45 25% 14%;
+    --muted: 46 55% 91%;
+    --muted-foreground: 40 15% 42%;
+    --accent: 46 60% 92%;
+    --accent-foreground: 45 25% 14%;
+    --destructive: 12 55% 52%;
+    --destructive-foreground: 48 100% 97%;
+    --border: 42 35% 80%;
+    --input: 42 35% 80%;
+    --ring: 40 65% 48%;
+    --chart-1: 40 65% 48%;
+    --chart-2: 12 55% 52%;
+    --chart-3: 32 55% 40%;
+    --chart-4: 46 70% 60%;
+    --chart-5: 20 45% 55%;
     --radius: 0.5rem;
   }
 }

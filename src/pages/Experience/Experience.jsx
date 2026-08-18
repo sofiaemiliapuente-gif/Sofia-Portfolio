@@ -5,19 +5,19 @@ const TimelineItem = ({ item }) => {
   return (
     <div className="relative flex items-start mb-8">
       {/* Timeline dot */}
-      <div className="flex-shrink-0 w-4 h-4 bg-accent-sage rounded-full border-4 border-main-bone shadow-lg mt-3 mr-6 z-10"></div>
+      <div className="flex-shrink-0 w-4 h-4 bg-accent-amber rounded-full border-4 border-main-bone shadow-lg mt-3 mr-6 z-10"></div>
 
       {/* Content card */}
       <div className="flex-1">
         <div className="bg-main-bone rounded-lg shadow-md border border-main-taupe/30 p-4 hover:shadow-lg transition-shadow duration-300">
           {/* Date badge */}
-          <div className="inline-block mb-2 px-3 py-1 rounded-full text-xs font-medium bg-accent-sage/20 text-accent-forest">
+          <div className="inline-block mb-2 px-3 py-1 rounded-full text-xs font-medium bg-accent-amber/20 text-accent-ochre">
             {item.title}
           </div>
 
           {/* Job title and company */}
           <h3 className="text-lg font-bold text-main-ink mb-1">{item.cardTitle}</h3>
-          <h4 className="text-md font-semibold text-accent-forest">{item.cardSubtitle}</h4>
+          <h4 className="text-md font-semibold text-accent-ochre">{item.cardSubtitle}</h4>
           {item.location && (
             <p className="flex items-center gap-1.5 text-sm text-main-taupe mt-1 mb-2">
               <MapPin className="w-3.5 h-3.5" />
@@ -51,7 +51,7 @@ const CustomTimeline = ({ items, title, icon: Icon, accentColor }) => {
       <div className="bg-main-sand rounded-lg p-6 border border-main-taupe/30">
         <div className="relative">
           {/* Timeline line */}
-          <div className="absolute left-2 top-0 w-0.5 h-full bg-accent-sage/30"></div>
+          <div className="absolute left-2 top-0 w-0.5 h-full bg-accent-amber/30"></div>
 
           {/* Timeline items */}
           {items.map((item, index) => (
@@ -85,14 +85,14 @@ const ExperienceSection = () => {
             items={experience}
             title="Professional Experience"
             icon={Briefcase}
-            accentColor="text-accent-sage"
+            accentColor="text-accent-amber"
           />
 
           <CustomTimeline
             items={education}
             title="Education"
             icon={GraduationCap}
-            accentColor="text-accent-gold"
+            accentColor="text-accent-coral"
           />
         </div>
 
@@ -110,7 +110,7 @@ const ExperienceSection = () => {
           <a
             href="/resume-sofia-puente-hernandez.pdf"
             download="sofia-puente-hernandez-resume.pdf"
-            className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg bg-accent-sage hover:bg-accent-forest text-white font-medium transition-colors duration-200 shadow-lg hover:shadow-xl"
+            className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg bg-accent-amber hover:bg-accent-ochre text-white font-medium transition-colors duration-200 shadow-lg hover:shadow-xl"
           >
             <span>Download résumé</span>
             <Download className="w-4 h-4" />
