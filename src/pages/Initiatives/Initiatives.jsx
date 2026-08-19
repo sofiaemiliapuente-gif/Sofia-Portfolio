@@ -51,7 +51,7 @@ const allInitiatives = [
   {
     title: "Community Events with Aguacate Latin Food",
     description:
-      "Organized events promoting Venezuelan cuisine as cultural representation, strengthening community engagement and brand visibility in Vienna.",
+      "Organized events promoting Venezuelan cuisine, as well as charity events after natural disasters, strengthening community engagement.",
     outcomes: [
       { value: "Ongoing", label: "events program" },
     ],
