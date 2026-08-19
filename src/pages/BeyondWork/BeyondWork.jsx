@@ -3,6 +3,7 @@ import {
   Clapperboard,
   PenLine,
   ArrowUpRight,
+  FileText,
   ChevronLeft,
   ChevronRight,
   ImageOff,
@@ -17,9 +18,15 @@ import {
 // using the exact filename below (see public/beyond-work/README.md).
 // Recommended: square (1:1), at least 1200×1200px, JPG or WEBP.
 //
-// Each slide can optionally link out (a reel, a writing sample, an
-// Instagram/portfolio) once one exists — set `link` to a URL and a
-// "View" button appears automatically. Leave it null until then.
+// Each slide can optionally link out (a reel, an Instagram/portfolio)
+// once one exists — set `link` to a URL and a "View" button appears
+// automatically. Leave it null until then.
+//
+// For pieces with individual documents (e.g. writing samples), use
+// `pieces` instead: a list of { title, href } shown as a small file list.
+// `href` can be an external link (Medium, Google Docs, etc.) or a local
+// PDF — drop the file at public/writing/<filename>.pdf and point href at
+// `/writing/<filename>.pdf` (see public/writing/README.md).
 const slides = [
   {
     category: "Film",
@@ -45,6 +52,9 @@ const slides = [
       "Writes essays and reflections on identity, place, and politics — an extension of the thinking behind her CEU thesis on Latin American informal settlements.",
     tags: ["Essays", "Cultural commentary", "Creative writing"],
     link: null,
+    // Add pieces here once ready, e.g.:
+    // pieces: [{ title: "Essay title", href: "/writing/essay-title.pdf" }],
+    pieces: [],
   },
 ];
 
@@ -145,6 +155,24 @@ export default function BeyondWork() {
                 </a>
               )}
             </div>
+
+            {slide.pieces?.length > 0 && (
+              <ul className="mt-3 pt-3 border-t border-main-taupe/20 space-y-1.5">
+                {slide.pieces.map((piece) => (
+                  <li key={piece.href}>
+                    <a
+                      href={piece.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 text-sm text-main-ink hover:text-accent-ochre transition-colors"
+                    >
+                      <FileText className="w-4 h-4 text-accent-ochre shrink-0" />
+                      {piece.title}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            )}
           </div>
         </div>
 
