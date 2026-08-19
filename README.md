@@ -67,9 +67,7 @@ placeholder tile until you drop the file in.
 3. **Beyond Work photos** — 2 of 3 slides done (sojufilm, film-1). Still
    need `writing.jpg` — drop it into `public/beyond-work/` using the
    exact filename listed in `public/beyond-work/README.md`.
-4. **Résumé PDF** — `public/resume-sofia-puente-hernandez.pdf` is
-   currently a one-page placeholder. Replace it with the real résumé,
-   keeping the same filename.
+4. ~~**Résumé PDF**~~ — done (`public/resume-sofia-puente-hernandez.pdf`).
 
 ## Deploying to GitHub Pages
 
