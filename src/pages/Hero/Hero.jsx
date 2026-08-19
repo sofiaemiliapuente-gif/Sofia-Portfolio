@@ -6,9 +6,6 @@ export default function Hero() {
       id="hero"
       className="hero-section relative min-h-screen bg-main-bone py-16 sm:py-20 md:py-32 flex items-center overflow-x-clip"
     >
-      {/* Simple background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-main-sand via-main-bone to-main-sand pointer-events-none"></div>
-
           {/* Main content container */}
           <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between relative z-10 px-4 md:px-8">
             {/* Left column - Text content */}

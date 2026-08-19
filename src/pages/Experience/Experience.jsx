@@ -66,9 +66,6 @@ const CustomTimeline = ({ items, title, icon: Icon, accentColor }) => {
 const ExperienceSection = () => {
   return (
     <section id="experience" className="min-h-screen bg-main-bone relative py-20">
-      {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-main-sand via-main-bone to-main-sand pointer-events-none"></div>
-
       {/* Content container */}
       <div className="relative container mx-auto px-4 md:px-8">
         {/* Section header */}

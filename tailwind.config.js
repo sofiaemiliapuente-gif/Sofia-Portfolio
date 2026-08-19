@@ -64,25 +64,22 @@ module.exports = {
           4: "hsl(var(--chart-4))",
           5: "hsl(var(--chart-5))",
         },
-        // Near-white base with a soft warm-cream secondary surface — kept
-        // deliberately restrained (readability/professionalism) with the
-        // warmth carried by the accent family instead of the background.
+        // Eco-journalist / sustainability palette: flat paper-white base
+        // (no gradients), soft ink text, sage green as the primary accent
+        // (links, buttons), deep moss for hover/dark accents.
         main: {
-          bone: "#FFFFFF",
-          sand: "#FBE7A6",
-          taupe: "#8C8171",
-          ink: "#242019",
+          bone: "#F6F4EF",
+          sand: "#ECE7DA",
+          taupe: "#6E7260",
+          ink: "#1F1E1B",
         },
-        // Muted antique-gold accent family (deep enough for real contrast
-        // with white text), a soft terracotta pop for highlights, and a
-        // rust used only for rare alert-style accents.
         accent: {
           DEFAULT: "hsl(var(--accent))",
           foreground: "hsl(var(--accent-foreground))",
-          amber: "#A97620",
-          ochre: "#6E4A12",
-          coral: "#C2704F",
-          rust: "#9C4A2E",
+          amber: "#7C8362",
+          ochre: "#5F664D",
+          coral: "#9AA37E",
+          rust: "#474A3A",
         },
       },
     },

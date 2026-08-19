@@ -20,9 +20,6 @@ const IndustryBanner = () => {
 
   return (
     <div className="relative py-12 bg-main-sand border-y border-main-taupe/20 overflow-hidden">
-      {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-r from-main-sand via-main-bone to-main-sand"></div>
-
       {/* Moving banner container */}
       <div className="relative">
         <div className="flex animate-scroll-left">
