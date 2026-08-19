@@ -10,7 +10,6 @@ than one photo show a small "1/3"-style counter on each tile.
 | `dongguk-exchange.jpg`              | Seoul, South Korea    | Exchange year at Dongguk University                 | ✅ in place |
 | `dongguk-exchange-2.jpg`            | Seoul, South Korea    | Exchange year at Dongguk University                 | ✅ in place |
 | `hong-kong.jpg`                     | Hong Kong             | Cultural exchange trip during her year abroad        | ✅ in place |
-| `vienna-embassy.jpg`                | Vienna, Austria       | Diplomatic event at the Embassy of Nicaragua         | pending |
 | `tulum-homa-kah.jpg`                | Tulum, Mexico         | Homa Kah, a certified sustainable development        | ✅ in place |
 | `tulum-homa-kah-2.jpg`              | Tulum, Mexico         | Homa Kah, a certified sustainable development        | ✅ in place |
 | `tulum-homa-kah-3.jpg`              | Tulum, Mexico         | Homa Kah, a certified sustainable development        | ✅ in place |

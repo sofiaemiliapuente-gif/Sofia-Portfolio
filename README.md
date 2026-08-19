@@ -61,10 +61,9 @@ placeholder tile until you drop the file in.
 1. ~~**Profile photo**~~ — done (`src/assets/images/sofia.jpg`, used in Hero
    and About). To adjust the crop, tweak the `object-[X%_Y%]` and
    `origin-[X%_Y%]` values on the `<img>` in each file.
-2. **Gallery photos** — 5 of 6 spots done (Dongguk exchange, Hong Kong,
-   Homa Kah, Aguacate, CEU Environmental Front). Still need the Vienna
-   embassy photo — drop it into `public/gallery/` using the exact
-   filename listed in `public/gallery/README.md`.
+2. ~~**Gallery photos**~~ — done (Dongguk exchange ×2, Hong Kong, Homa Kah
+   ×3, Aguacate ×3, CEU Environmental Front ×3). Add more anytime by
+   dropping a file into `public/gallery/` per `public/gallery/README.md`.
 3. **Beyond Work photos** — 2 of 3 slides done (sojufilm, film-1). Still
    need `writing.jpg` — drop it into `public/beyond-work/` using the
    exact filename listed in `public/beyond-work/README.md`.

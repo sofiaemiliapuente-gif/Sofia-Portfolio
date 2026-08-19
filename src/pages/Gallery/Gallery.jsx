@@ -28,11 +28,6 @@ const galleryItems = [
     context: "Cultural exchange trip during her year abroad",
   },
   {
-    filename: "vienna-embassy.jpg",
-    place: "Vienna, Austria",
-    context: "Diplomatic event at the Embassy of Nicaragua",
-  },
-  {
     filename: "tulum-homa-kah.jpg",
     place: "Tulum, Mexico",
     context: "Homa Kah, a certified sustainable development",
