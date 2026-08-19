@@ -4,7 +4,7 @@
 
 .gradient-border {
   position: relative;
-  background: linear-gradient(45deg, #7C8362, #5F664D);
+  background: linear-gradient(45deg, #5F664D, #474D39);
   padding: 2px;
   border-radius: 0.75rem;
 }
@@ -20,7 +20,7 @@
   height: 2px;
   bottom: -4px;
   left: 0;
-  background: linear-gradient(45deg, #7C8362, #5F664D);
+  background: linear-gradient(45deg, #5F664D, #474D39);
   transition: width 0.3s ease;
 }
 
@@ -42,17 +42,17 @@
     --secondary-foreground: 45 8% 11%;
     --muted: 45 20% 90%;
     --muted-foreground: 78 10% 35%;
-    --accent: 73 14% 45%;
+    --accent: 77 14% 35%;
     --accent-foreground: 43 30% 96%;
-    --destructive: 78 15% 22%;
+    --destructive: 80 15% 20%;
     --destructive-foreground: 43 30% 96%;
     --border: 45 20% 85%;
     --input: 45 20% 85%;
-    --ring: 77 14% 35%;
-    --chart-1: 73 14% 45%;
-    --chart-2: 77 14% 35%;
-    --chart-3: 78 15% 22%;
-    --chart-4: 84 12% 55%;
+    --ring: 78 15% 26%;
+    --chart-1: 77 14% 35%;
+    --chart-2: 78 15% 26%;
+    --chart-3: 80 15% 20%;
+    --chart-4: 73 14% 45%;
     --chart-5: 45 8% 25%;
     --radius: 0.5rem;
   }

@@ -64,9 +64,9 @@ module.exports = {
           4: "hsl(var(--chart-4))",
           5: "hsl(var(--chart-5))",
         },
-        // Eco-journalist / sustainability palette: flat paper-white base
-        // (no gradients), soft ink text, sage green as the primary accent
-        // (links, buttons), deep moss for hover/dark accents.
+        // Monochromatic eco-journalist palette: flat paper-white base (no
+        // gradients), soft ink text, and a single deep-moss accent family
+        // (scaled by lightness) for links, buttons, and hover states.
         main: {
           bone: "#F6F4EF",
           sand: "#ECE7DA",
@@ -76,10 +76,10 @@ module.exports = {
         accent: {
           DEFAULT: "hsl(var(--accent))",
           foreground: "hsl(var(--accent-foreground))",
-          amber: "#7C8362",
-          ochre: "#5F664D",
-          coral: "#9AA37E",
-          rust: "#474A3A",
+          amber: "#5F664D",
+          ochre: "#474D39",
+          coral: "#7C8362",
+          rust: "#363B2C",
         },
       },
     },
