@@ -99,7 +99,7 @@ export default function BeyondWork() {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-main-ink mb-4 font-serif">Beyond Work</h2>
           <p className="text-lg text-main-taupe max-w-2xl mx-auto">
-            Creative pursuits outside the office — film and writing
+            Film and writing, my creative pursuits and the ideas that shape me.
           </p>
         </div>
 

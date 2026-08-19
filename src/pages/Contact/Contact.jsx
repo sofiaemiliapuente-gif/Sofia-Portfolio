@@ -43,34 +43,13 @@ export default function Contact() {
           Let's talk
         </h2>
         <p className="text-main-taupe text-lg">
-          I'm open to roles and collaborations in sales, culture, events, and
-          politics — anywhere a multilingual, cross-cultural perspective is
-          useful. If you're building something in international affairs,
-          sustainability, events, or communications, I'd like to hear about
-          it.
+          I'm interested in work that brings together culture, international
+          affairs, wellness, sustainability, and development, especially
+          where Latin American perspectives and multicultural thinking have
+          a place. Whether in business, academia, creative projects, or
+          beyond, I'm always open to collaborations, and opportunities to
+          build something meaningful.
         </p>
-
-        {/* How I work */}
-        <div className="mt-8 max-w-xl mx-auto text-left space-y-2">
-          <h3 className="font-semibold text-main-ink text-center mb-3">How I work</h3>
-          <ul className="text-main-taupe space-y-1.5">
-            <li>
-              <span className="text-main-ink">Multilingual, always.</span>{" "}
-              Reach me in Spanish, English, or German — I move between them
-              daily.
-            </li>
-            <li>
-              <span className="text-main-ink">Detail-first.</span> From
-              diplomatic reports to event logistics, I keep track of the
-              details that keep things moving.
-            </li>
-            <li>
-              <span className="text-main-ink">People first.</span> I care
-              more about connecting people across languages and cultures than
-              about following a script.
-            </li>
-          </ul>
-        </div>
 
         {/* Contact details */}
         <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-6 text-left">

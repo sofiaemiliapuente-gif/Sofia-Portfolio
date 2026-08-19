@@ -75,7 +75,7 @@ const ExperienceSection = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-main-ink mb-4 font-serif">Experience</h2>
           <p className="text-lg text-main-taupe max-w-2xl mx-auto">
-            Diplomacy, sustainability, and hospitality — building a career around bringing people together
+            Diplomacy, sustainability, and hospitality.
           </p>
         </div>
 
@@ -99,9 +99,9 @@ const ExperienceSection = () => {
         {/* Resume Download CTA */}
         <div className="text-center">
           <div className="mb-8">
-            <h3 className="text-2xl font-bold text-main-ink mb-4">Want more detail?</h3>
+            <h3 className="text-2xl font-bold text-main-ink mb-4">Want more details?</h3>
             <p className="text-lg text-main-taupe max-w-xl mx-auto">
-              Download the full résumé for a detailed look at my experience, languages, and skills.
+              Download my full resume for a more focused look.
             </p>
           </div>
 

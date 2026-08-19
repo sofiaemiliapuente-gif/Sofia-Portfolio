@@ -128,7 +128,7 @@ export default function Gallery() {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-main-ink mb-4 font-serif">Gallery</h2>
           <p className="text-lg text-main-taupe max-w-2xl mx-auto">
-            A few moments from across the places and projects that shaped this path
+            A few snapshots from events, moments and experiences.
           </p>
         </div>
 

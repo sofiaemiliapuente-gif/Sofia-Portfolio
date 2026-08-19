@@ -24,14 +24,12 @@ export default function Hero() {
               {/* Description */}
               <div className="mb-12 max-w-xl">
                 <p className="text-lg text-main-ink/80 leading-relaxed">
-                  Multilingual professional with experience spanning project
-                  coordination, communications, customer relations, and
-                  international affairs. I enjoy bringing people together and
-                  finding practical solutions that help projects move forward.
-                  Having worked across diplomacy, sustainability, and
-                  hospitality, I'm comfortable managing multiple priorities,
-                  with a uniquely multicultural perspective emphasizing Latin
-                  American voices.
+                  I am a writer and researcher interested in stories, culture,
+                  and the connections between people and places. With a
+                  background spanning international affairs, sustainability,
+                  sales and communications, I'm especially drawn to projects
+                  with an international dimension and to stories that
+                  deserve to be heard.
                 </p>
               </div>
 

@@ -93,7 +93,7 @@ const SkillsSection = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-main-ink mb-4 font-serif">Skills</h2>
           <p className="text-lg text-main-taupe max-w-2xl mx-auto">
-            Languages, competencies, and the tools I use to bring people together
+            Languages, competencies, and the skills I have learned.
           </p>
         </div>
 

@@ -69,7 +69,7 @@ module.exports = {
         // warmth carried by the accent family instead of the background.
         main: {
           bone: "#FFFFFF",
-          sand: "#F4E7CF",
+          sand: "#FBE7A6",
           taupe: "#8C8171",
           ink: "#242019",
         },
@@ -79,10 +79,10 @@ module.exports = {
         accent: {
           DEFAULT: "hsl(var(--accent))",
           foreground: "hsl(var(--accent-foreground))",
-          amber: "#B8892A",
-          ochre: "#8F6B1E",
-          coral: "#C97B5E",
-          rust: "#A85338",
+          amber: "#A97620",
+          ochre: "#6E4A12",
+          coral: "#C2704F",
+          rust: "#9C4A2E",
         },
       },
     },
