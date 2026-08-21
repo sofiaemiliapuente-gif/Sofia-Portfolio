@@ -14,7 +14,7 @@ export default function Hero() {
               <div className="mb-8">
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-main-ink font-serif">
                   Sofía Puente Hernández
-                  <span className="block text-accent-ochre">International Relations</span>
+                  <span className="block text-accent-ochre">Culture, Communications & International Affairs</span>
                 </h1>
               </div>
 

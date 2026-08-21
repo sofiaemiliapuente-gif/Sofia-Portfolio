@@ -38,11 +38,6 @@ export default function Footer() {
               <FaPhone size={18} />
             </a>
           </div>
-
-          {/* Role */}
-          <div className="text-main-taupe text-sm">
-            International Relations & Communications
-          </div>
         </div>
       </div>
     </footer>
