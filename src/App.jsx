@@ -40,9 +40,9 @@ export default function App() {
     <>
       <Hero />
       <Skills />
+      <Initiatives />
       <Experience />
       <IndustryBanner />
-      <Initiatives />
       <BeyondWork />
       <Gallery />
       <Contact />

@@ -26,8 +26,8 @@ export default function Header() {
 
   const navLinks = [
     { id: "hero", icon: FaHome, text: "Home" },
-    { id: "experience", icon: FaGraduationCap, text: "Experience" },
     { id: "initiatives", icon: FaLightbulb, text: "Initiatives" },
+    { id: "experience", icon: FaGraduationCap, text: "Experience" },
     { id: "beyond-work", icon: FaPalette, text: "Beyond Work" },
     { id: "gallery", icon: FaImages, text: "Gallery" },
     { id: "contact", icon: FaEnvelope, text: "Contact" },
