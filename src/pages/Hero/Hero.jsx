@@ -14,15 +14,16 @@ export default function Hero() {
               <div className="mb-8">
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-main-ink font-serif">
                   Sofía Puente Hernández
-                  <span className="block text-2xl sm:text-3xl lg:text-4xl text-accent-ochre">Culture, Communications & International Affairs</span>
+                  <span className="block text-2xl sm:text-3xl lg:text-4xl text-accent-ochre">Culture, Communications</span>
                 </h1>
               </div>
 
               {/* Description */}
               <div className="mb-12 max-w-xl">
                 <p className="text-lg text-main-ink/80 leading-relaxed">
-                  I am a writer and researcher interested in stories, culture,
-                  and the connections between people and places. With a
+                  I am a writer and researcher interested in stories, food,
+                  culture, and the connections between people and places.
+                  With a
                   background spanning international affairs, sustainability,
                   sales and communications, I'm especially drawn to projects
                   with an international dimension and to stories that
